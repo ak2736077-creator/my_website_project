@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AALOK DADDY</title>
+  <link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+>
+</head>
+<body>
+  <header class="header-container">
+    <div class="zigzag-name">AALOK DADDY</div>
+    <div class="subtitle">AALOK DADDY • VERSION 1.0</div>
+  </header>
+
+
+
+  <main id="appPage" class="dashboard-container">
+
+    <!-- Period Card -->
+    <section class="dashboard-card period-card">
+        <div class="card-label">
+    <i class="fa-solid fa-clock card-icon"></i>
+    CURRENT PERIOD
+</div>
+
+        <div class="card-value" id="pID">
+            PERIOD: ---
+        </div>
+
+        <div class="card-footer">
+            Live Period Information
+        </div>
+    </section>
+
+
+    <!-- Result Card -->
+    <section class="dashboard-card result-card">
+        <div class="card-label">
+    <i class="fa-solid fa-chart-line card-icon"></i>
+    CURRENT RESULT
+</div>
+
+        <div class="card-value pred-val" id="pRes">
+            WAIT...
+        </div>
+
+        <div class="card-footer">
+            Result Information
+        </div>
+    </section>
+
+
+    <!-- Numbers Card -->
+    <section class="dashboard-card numbers-card">
+        <div class="card-label">
+    <i class="fa-solid fa-hashtag card-icon"></i>
+    NUMBER INFORMATION
+</div>
+
+        <div class="card-value numbers-box" id="pOpps">
+            LOADING...
+        </div>
+
+        <div class="card-footer">
+            Number Details
+        </div>
+    </section>
+
+
+    <!-- History Section -->
+    <section class="dashboard-card history-card">
+
+        <div class="history-heading">
+            <h2>
+    <i class="fa-solid fa-clock-rotate-left card-icon"></i>
+    Recent History
+</h2>
+            <span class="history-badge">HISTORY</span>
+        </div>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>PRD</th>
+                        <th>PRED</th>
+                        <th>NUM</th>
+                        <th>STATUS</th>
+                    </tr>
+                </thead>
+
+                <tbody id="logs"></tbody>
+            </table>
+        </div>
+
+    </section>
+
+</main>
+
+
+
+  <footer class="footer-branding">
+    <button class="name-box" type="button" id="adminButton">AALOK DADDY</button>
+  </footer>
+
+  <div id="overlay" class="overlay hidden"></div>
+  <section id="adminPanel" class="admin-modal hidden" aria-modal="true" role="dialog">
+    <h3>MASTER CONTROL</h3>
+    <p>App is now permantely unlocked.</p>
+    <button class="btn-main close-button" type="button" id="closeAdminButton">CLOSE</button>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
